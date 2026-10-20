@@ -101,7 +101,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     // ---- theme
-    fun setTheme(t: GlassTheme) {
+    fun applyTheme(t: GlassTheme) {
         theme = t
         prefs.edit().putString("theme", t.name).apply()
     }
