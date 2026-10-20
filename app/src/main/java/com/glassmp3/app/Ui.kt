@@ -293,7 +293,7 @@ fun Header(vm: MainViewModel) {
                                 Color.White.copy(alpha = if (th.name == vm.theme.name) 1f else 0.4f),
                                 CircleShape,
                             )
-                            .clickable { vm.setTheme(th) },
+                            .clickable { vm.applyTheme(th) },
                     )
                 }
             }
